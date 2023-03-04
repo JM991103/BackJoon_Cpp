@@ -104,4 +104,8 @@ int main()
 	//	}
 	//}
 	//cout << result << endl;
+
+	long long n, m;
+	cin >> n >> m;
+	cout << abs(n - m);
 }
