@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <string>
 using namespace std;
 
 int main()
@@ -105,7 +106,20 @@ int main()
 	//}
 	//cout << result << endl;
 
-	long long n, m;
+	/*long long n, m;
 	cin >> n >> m;
-	cout << abs(n - m);
+	cout << abs(n - m);*/
+
+	string str;
+
+	while (true)
+	{
+		getline(cin, str);
+		if (str == "")
+		{
+			break;
+		}
+		cout << str << endl;
+	}
+
 }
