@@ -39,16 +39,23 @@ int main()
 
 	//cout << myqueue.front();
 
-	int n = 0;
-	vector<int> a(5, 0);
+	//int n = 0;
+	//vector<int> a(5, 0);
 
-	for (int i = 0; i < a.size(); i++)
+	//for (int i = 0; i < a.size(); i++)
+	//{
+	//	cin >> a[i];
+	//	n += a[i] * a[i];
+	//}
+
+	//int b = n % 10;
+	//cout << b;
+
+	int n;
+	cin >> n;
+
+	for (int i = 1; i <= n; i++)
 	{
-		cin >> a[i];
-		n += a[i] * a[i];
+		cout << i << "\n";
 	}
-
-	int b = n % 10;
-
-	cout << b;
 }
