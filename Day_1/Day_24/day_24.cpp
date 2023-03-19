@@ -64,24 +64,31 @@ int main()
 
 	//cout << a + b;
 
-	int a, b;
+	//int a, b;
 
-	while (1)
-	{
-		cin >> a >> b;
+	//while (1)
+	//{
+	//	cin >> a >> b;
 
-		if (a == 0 && b == 0)
-		{
-			break;
-		}
+	//	if (a == 0 && b == 0)
+	//	{
+	//		break;
+	//	}
 
-		if (a > b)
-		{
-			cout << "Yes" << "\n";
-		}
-		else
-		{
-			cout << "No" << "\n";
-		}
-	}
+	//	if (a > b)
+	//	{
+	//		cout << "Yes" << "\n";
+	//	}
+	//	else
+	//	{
+	//		cout << "No" << "\n";
+	//	}
+	//}
+
+	int a, b, c, d;
+	cin >> a >> b >> c >> d;
+	
+	int temp = a + b + c + d;
+	cout << temp / 60 << "\n" << temp % 60;
+	
 }
