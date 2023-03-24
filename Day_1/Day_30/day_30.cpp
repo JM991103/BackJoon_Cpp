@@ -8,7 +8,7 @@ int main()
 	cin.tie(NULL);
 	cout.tie(NULL);
 
-	vector<int> a(5, 0);
+	/*vector<int> a(5, 0);
 	int temp = 0;
 	for (int i = 0; i < 5; i++)
 	{
@@ -16,5 +16,13 @@ int main()
 		temp += a[i];
 	}
 
-	cout << temp;
+	cout << temp;*/
+
+	int n;
+	cin >> n;
+	int temp = n * 0.22;
+	int temp2 = n - temp;
+	int temp3 = temp * 0.2;
+	int temp4 = n - temp3;
+	cout << temp2 << " " << temp4;
 }
