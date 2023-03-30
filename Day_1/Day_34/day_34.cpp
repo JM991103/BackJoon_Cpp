@@ -54,19 +54,30 @@ int main()
        //}
        //cout << count;
 
-    int s[4], m[2];
+    //int s[4], m[2];
 
-    for (int i = 0; i < 4; i++)
+    //for (int i = 0; i < 4; i++)
+    //{
+    //    cin >> s[i];
+    //}
+    //sort(s, s + 4);
+
+    //for (int i = 0; i < 2; i++)
+    //{
+    //    cin >> m[i];
+    //}
+    //sort(m, m + 2);
+
+    //cout << s[1] + s[2] + s[3] + m[1] << '\n';
+
+    int n, m;
+    cin >> n >> m;
+    if (m == 0 && (12 <= n && n <= 16))
     {
-        cin >> s[i];
+        cout << "320";
     }
-    sort(s, s + 4);
-
-    for (int i = 0; i < 2; i++)
+    else
     {
-        cin >> m[i];
+        cout << "280";
     }
-    sort(m, m + 2);
-
-    cout << s[1] + s[2] + s[3] + m[1] << '\n';
 }
