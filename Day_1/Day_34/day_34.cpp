@@ -70,7 +70,7 @@ int main()
 
     //cout << s[1] + s[2] + s[3] + m[1] << '\n';
 
-    int n, m;
+    /*int n, m;
     cin >> n >> m;
     if (m == 0 && (12 <= n && n <= 16))
     {
@@ -79,5 +79,16 @@ int main()
     else
     {
         cout << "280";
-    }
+    }*/
+
+    long long n;
+    cin >> n;
+    long long ans = 1;
+
+    for (long long i = 2; i <= n; i++)
+    {
+        ans *= i;
+    }      
+
+    cout << ans;
 }
