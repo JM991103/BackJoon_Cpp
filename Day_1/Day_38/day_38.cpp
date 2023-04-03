@@ -25,7 +25,20 @@ int main()
     //    cout << s << "\n";
     //}
 
-    int n;
+   /* int n;
     cin >> n;
-    cout << (1 << n);
+    cout << (1 << n);*/
+
+    int a[5];    
+    int temp = 0;
+    for (int i = 0; i < 5; i++)
+    {
+        cin >> a[i];
+        if (a[i] < 40)
+        {
+            a[i] = 40;
+        }
+        temp += a[i];
+    }
+    cout << temp / 5;
 }
