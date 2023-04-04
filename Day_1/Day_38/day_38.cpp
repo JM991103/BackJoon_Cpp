@@ -29,7 +29,7 @@ int main()
     cin >> n;
     cout << (1 << n);*/
 
-    int a[5];    
+    /*int a[5];    
     int temp = 0;
     for (int i = 0; i < 5; i++)
     {
@@ -40,5 +40,20 @@ int main()
         }
         temp += a[i];
     }
-    cout << temp / 5;
+    cout << temp / 5;*/
+
+    int n, m;
+
+    int temp = 0;
+    int max = 0;
+    for (int i = 0; i < 4; i++)
+    {
+        cin >> n >> m;
+        temp += m - n;
+        if (temp > max)
+        {
+            max = temp;
+        }
+    }
+    cout << max;
 }
