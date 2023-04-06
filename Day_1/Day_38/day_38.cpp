@@ -58,23 +58,23 @@ int main()
     }
     cout << max;*/
 
-    int a, b, num;
-    int arr[] = { 1,2,3 };
+    //int a, b, num;
+    //int arr[] = { 1,2,3 };
 
-    cin >> num;
+    //cin >> num;
 
-    for (int i = 0; i < num; i++)
-    {
-        cin >> a >> b;
-        swap(arr[a - 1], arr[b - 1]);        
-    }
+    //for (int i = 0; i < num; i++)
+    //{
+    //    cin >> a >> b;
+    //    swap(arr[a - 1], arr[b - 1]);        
+    //}
 
-    for (int i = 0; i < 3; i++)
-    {
-        if (arr[i] == 1)
-        {
-            cout << i + 1;
-        }
-    }
+    //for (int i = 0; i < 3; i++)
+    //{
+    //    if (arr[i] == 1)
+    //    {
+    //        cout << i + 1;
+    //    }
+    //}
 
 }
