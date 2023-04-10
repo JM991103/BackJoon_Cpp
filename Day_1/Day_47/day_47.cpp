@@ -9,23 +9,40 @@ int main()
     cin.tie(NULL);
     cout.tie(NULL);
 
+    //int n;
+    //int temp = 0;
+    //cin >> n;
+
+    //for (int i = 0; i < n; i++)
+    //{
+    //    int a;
+    //    cin >> a;
+
+    //    temp = 0;
+
+    //    for (int i = 0; i < a; i++)
+    //    {
+    //        int b;
+    //        cin >> b;
+    //        temp += b;
+    //    }
+    //    cout << temp << "\n";
+    //}
+
     int n;
-    int temp = 0;
     cin >> n;
 
-    for (int i = 0; i < n; i++)
+    for (int row = 1; row <= n; row++)
     {
-        int a;
-        cin >> a;
-
-        temp = 0;
-
-        for (int i = 0; i < a; i++)
+        for (int i = 0; i < n - row; i++)
         {
-            int b;
-            cin >> b;
-            temp += b;
+            cout << " ";
         }
-        cout << temp << "\n";
+        for (int i = 0; i < row; i++)
+        {
+            cout << "*";
+        }
+        cout << "\n";
     }
+
 }

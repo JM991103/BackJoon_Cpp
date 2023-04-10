@@ -28,5 +28,5 @@ int Fibo(int num)
         return 1;
     }
 
-    return Fibo(num - 2) + Fibo(num - 1);
+    return num + Fibo(num - 1);
 }
