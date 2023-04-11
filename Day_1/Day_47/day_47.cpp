@@ -29,16 +29,28 @@ int main()
     //    cout << temp << "\n";
     //}
 
+    //int n;
+    //cin >> n;
+
+    //for (int row = 1; row <= n; row++)
+    //{
+    //    for (int i = 0; i < n - row; i++)
+    //    {
+    //        cout << " ";
+    //    }
+    //    for (int i = 0; i < row; i++)
+    //    {
+    //        cout << "*";
+    //    }
+    //    cout << "\n";
+    //}
+
     int n;
     cin >> n;
 
-    for (int row = 1; row <= n; row++)
+    for (int row = 0; row < n; row++)
     {
-        for (int i = 0; i < n - row; i++)
-        {
-            cout << " ";
-        }
-        for (int i = 0; i < row; i++)
+        for (int i = n; i > row; i--)
         {
             cout << "*";
         }
