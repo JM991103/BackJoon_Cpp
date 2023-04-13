@@ -8,27 +8,33 @@ int main()
     cin.tie(NULL);
     cout.tie(NULL);
 
-    int n, a, b, c, d;
-    int temp1;
-    cin >> n >> a >> b >> c >> d;
+    //int n, a, b, c, d;
+    //int temp1;
+    //cin >> n >> a >> b >> c >> d;
 
-    if (a % c == 0)
-    {
-        temp1 = a / c;
-    }
-    else
-    {
-        temp1 = a / c + 1;
-    }
+    //if (a % c == 0)
+    //{
+    //    temp1 = a / c;
+    //}
+    //else
+    //{
+    //    temp1 = a / c + 1;
+    //}
 
-    if (b % d == 0)
-    {
-        temp1 = max(temp1, b / d);
-    }
-    else
-    {
-        temp1 = max(temp1, b / d + 1);
-    }
+    //if (b % d == 0)
+    //{
+    //    temp1 = max(temp1, b / d);
+    //}
+    //else
+    //{
+    //    temp1 = max(temp1, b / d + 1);
+    //}
 
-    cout << n - temp1 << "\n";
+    //cout << n - temp1 << "\n";
+
+    int h, m, s, d;
+
+    cin >> h >> m >> s >> d;
+    
+    cout << (h + (m + (s + d) / 60) / 60) % 24 << " " << (m + (s + d) / 60) % 60 << " " << (s + d) % 60;
 }
