@@ -32,9 +32,31 @@ int main()
 
     //cout << n - temp1 << "\n";
 
-    int h, m, s, d;
+    /*int h, m, s, d;
 
     cin >> h >> m >> s >> d;
     
-    cout << (h + (m + (s + d) / 60) / 60) % 24 << " " << (m + (s + d) / 60) % 60 << " " << (s + d) % 60;
+    cout << (h + (m + (s + d) / 60) / 60) % 24 << " " << (m + (s + d) / 60) % 60 << " " << (s + d) % 60;*/
+
+    int a, b, c;    
+    
+    cin >> a >> b >> c;
+
+    if ((a+b+c) != 180)
+    {
+        cout << "Error";
+    }
+    else if (a == b && b == c)
+    {
+        cout << "Equilateral";
+    }
+    else if (a == b || a == c || b == c)
+    {
+        cout << "Isosceles";
+    }
+    else
+    {
+        cout << "Scalene";
+    }   
+
 }
