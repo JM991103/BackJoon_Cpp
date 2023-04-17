@@ -30,13 +30,22 @@ int main()
     //    }
     //}
 
-    int burger1, burger2, burger3, coke, sprite;
+    /*int burger1, burger2, burger3, coke, sprite;
 
     cin >> burger1 >> burger2 >> burger3 >> coke >> sprite;
-    
+
     int burgerMin = min(burger1, burger2);
     burgerMin = min(burgerMin, burger3);
     int drinkMin = min(coke, sprite);
 
-    cout << burgerMin + drinkMin - 50 << "\n";
+    cout << burgerMin + drinkMin - 50 << "\n";*/
+
+
+    int r1, s;
+    int result;
+
+    cin >> r1 >> s;
+    result = (s * 2) - r1;;
+
+    cout << result << "\n";
 }
