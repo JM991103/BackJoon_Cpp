@@ -1,5 +1,6 @@
 #include <iostream>
 #include <algorithm>
+#include <string>
 using namespace std;
 
 int main()
@@ -41,11 +42,23 @@ int main()
     cout << burgerMin + drinkMin - 50 << "\n";*/
 
 
-    int r1, s;
+    /*int r1, s;
     int result;
 
     cin >> r1 >> s;
     result = (s * 2) - r1;;
 
-    cout << result << "\n";
+    cout << result << "\n";*/
+
+    int num;
+    cin >> num;
+    cin.ignore();
+
+    for (int i = 1; i <= num; i++)
+    {
+        string s;
+        getline(cin, s);
+        cin.clear();
+        cout << i << ". " << s << "\n";
+    }
 }
