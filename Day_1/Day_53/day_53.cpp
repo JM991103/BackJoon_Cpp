@@ -50,7 +50,7 @@ int main()
 
     cout << result << "\n";*/
 
-    int num;
+    /*int num;
     cin >> num;
     cin.ignore();
 
@@ -60,5 +60,20 @@ int main()
         getline(cin, s);
         cin.clear();
         cout << i << ". " << s << "\n";
+    }*/
+
+    int n;
+    cin >> n;
+    int a, b, c, d, e;
+    float A = 350.34, B = 230.90, C = 190.55, D = 125.30, E = 180.90;
+
+
+    for (int i = 0; i < n; i++)
+    {
+        cin >> a >> b >> c >> d >> e;
+        float temp = (a * A) + (b * B) + (c * C) + (d * D) + (e * E);
+
+        cout.precision(2);
+        printf("$%.2f\n", temp);
     }
 }
