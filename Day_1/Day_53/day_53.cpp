@@ -62,7 +62,7 @@ int main()
         cout << i << ". " << s << "\n";
     }*/
 
-    int n;
+    /*int n;
     cin >> n;
     int a, b, c, d, e;
     float A = 350.34, B = 230.90, C = 190.55, D = 125.30, E = 180.90;
@@ -75,5 +75,24 @@ int main()
 
         cout.precision(2);
         printf("$%.2f\n", temp);
+    }*/
+
+    int n, a, b;
+    int temp1 = 100, temp2 = 100;
+
+    cin >> n;
+    while (n--)
+    {
+        cin >> a >> b;
+
+        if (a > b)
+        {
+            temp2 -= a;
+        }
+        else if (a < b)
+        {
+            temp1 -= b;
+        }        
     }
+    cout << temp1 << "\n" << temp2 << "\n";
 }
