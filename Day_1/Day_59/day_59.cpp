@@ -9,28 +9,58 @@ int main()
     cin.tie(NULL);
     cout.tie(NULL);
 
-    int n, min = 100, sum = 0;
+    //int n, min = 100, sum = 0;
 
-    for (int i = 0; i < 7; i++)
+    //for (int i = 0; i < 7; i++)
+    //{
+    //    cin >> n;
+
+    //    if (n % 2 == 1)
+    //    {
+    //        sum += n;
+    //        if (n < min)
+    //        {
+    //            min = n;
+    //        }
+    //    }
+    //}
+
+    //if (sum == 0)
+    //{
+    //    cout << -1;
+    //}
+    //else
+    //{
+    //    cout << sum << "\n" << min;
+    //}
+
+    int a, b, c, d;
+
+    for (int i = 0; i < 3; i++)
     {
-        cin >> n;
+        cin >> a >> b >> c >> d;
 
-        if (n % 2 == 1)
+        int temp = a + b + c + d;
+
+        if (temp == 3)
         {
-            sum += n;
-            if (n < min)
-            {
-                min = n;
-            }
+            cout << "A" << "\n";
         }
-    }
-
-    if (sum == 0)
-    {
-        cout << -1;
-    }
-    else
-    {
-        cout << sum << "\n" << min;
+        else if (temp == 2)
+        {
+            cout << "B" << "\n";
+        }
+        else if (temp == 1)
+        {
+            cout << "C" << "\n";
+        }
+        else if (temp == 0)
+        {
+            cout << "D" << "\n";
+        }
+        else if (temp == 4)
+        {
+            cout << "E" << "\n";
+        }
     }
 }
