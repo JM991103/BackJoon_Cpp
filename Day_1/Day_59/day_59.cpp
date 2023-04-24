@@ -34,33 +34,40 @@ int main()
     //    cout << sum << "\n" << min;
     //}
 
-    int a, b, c, d;
+    //int a, b, c, d;
 
-    for (int i = 0; i < 3; i++)
-    {
-        cin >> a >> b >> c >> d;
+    //for (int i = 0; i < 3; i++)
+    //{
+    //    cin >> a >> b >> c >> d;
 
-        int temp = a + b + c + d;
+    //    int temp = a + b + c + d;
 
-        if (temp == 3)
-        {
-            cout << "A" << "\n";
-        }
-        else if (temp == 2)
-        {
-            cout << "B" << "\n";
-        }
-        else if (temp == 1)
-        {
-            cout << "C" << "\n";
-        }
-        else if (temp == 0)
-        {
-            cout << "D" << "\n";
-        }
-        else if (temp == 4)
-        {
-            cout << "E" << "\n";
-        }
-    }
+    //    if (temp == 3)
+    //    {
+    //        cout << "A" << "\n";
+    //    }
+    //    else if (temp == 2)
+    //    {
+    //        cout << "B" << "\n";
+    //    }
+    //    else if (temp == 1)
+    //    {
+    //        cout << "C" << "\n";
+    //    }
+    //    else if (temp == 0)
+    //    {
+    //        cout << "D" << "\n";
+    //    }
+    //    else if (temp == 4)
+    //    {
+    //        cout << "E" << "\n";
+    //    }
+    //}
+    int a, b;
+
+    cin >> a >> b;
+
+    if (a * (100 - b) / 100 >= 100) cout << 0;
+
+    else cout << 1;
 }
