@@ -71,5 +71,21 @@ int main()
 
     else cout << 1;*/
 
-    cout << "I'm Sexy" << "\n";
+    /*cout << "I'm Sexy" << "\n";*/
+
+    int num, temp = 0;
+
+    while (1)
+    {
+        cin >> num;
+
+        if (num == -1)
+        {
+            break;
+        }
+
+        temp = temp + num;
+    }
+
+    cout << temp;
 }
