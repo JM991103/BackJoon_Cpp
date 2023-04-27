@@ -73,19 +73,27 @@ int main()
 
     /*cout << "I'm Sexy" << "\n";*/
 
-    int num, temp = 0;
+    //int num, temp = 0;
 
-    while (1)
-    {
-        cin >> num;
+    //while (1)
+    //{
+    //    cin >> num;
 
-        if (num == -1)
-        {
-            break;
-        }
+    //    if (num == -1)
+    //    {
+    //        break;
+    //    }
 
-        temp = temp + num;
-    }
+    //    temp = temp + num;
+    //}
 
-    cout << temp;
+    //cout << temp;
+
+    string s;
+
+    cin >> s;
+
+    cout << ":fan:" << ":fan:" << ":fan:" << "\n";
+    cout << ":fan:" <<":" << s << ":" << ":fan:" << "\n";
+    cout << ":fan:" << ":fan:" << ":fan:" << "\n";
 }
