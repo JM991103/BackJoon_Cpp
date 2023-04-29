@@ -89,28 +89,40 @@ int main()
 
     //cout << temp;
 
-    int a[3];
+    //int a[3];
 
-    for (int i = 0; i < 3; i++)
-    {
-        cin >> a[i];        
-    }
+    //for (int i = 0; i < 3; i++)
+    //{
+    //    cin >> a[i];        
+    //}
 
-    sort(a, a + 3);
+    //sort(a, a + 3);
 
-    int d = a[1] - a[0];
-    int d2 = a[2] - a[1];
+    //int d = a[1] - a[0];
+    //int d2 = a[2] - a[1];
 
-    if (d > d2)
+    //if (d > d2)
+    //{
+    //    cout << a[0] + d2;
+    //}
+    //else if (d == d2)
+    //{
+    //    cout << a[2] + d;
+    //}
+    //else
+    //{
+    //    cout << a[1] + d;
+    //}
+
+    int n, sum = 0;
+    cin >> n;
+
+    for (int i = 1; i <= n; i++)
     {
-        cout << a[0] + d2;
+        for (int j = 0; j <= i; j++)
+        {
+            sum += i + j;
+        }
     }
-    else if (d == d2)
-    {
-        cout << a[2] + d;
-    }
-    else
-    {
-        cout << a[1] + d;
-    }
+    cout << sum << "\n";
 }
