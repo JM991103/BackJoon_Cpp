@@ -114,7 +114,7 @@ int main()
     //    cout << a[1] + d;
     //}
 
-    int n, sum = 0;
+    /*int n, sum = 0;
     cin >> n;
 
     for (int i = 1; i <= n; i++)
@@ -124,5 +124,5 @@ int main()
             sum += i + j;
         }
     }
-    cout << sum << "\n";
+    cout << sum << "\n";*/
 }
