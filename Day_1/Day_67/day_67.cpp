@@ -9,17 +9,34 @@ int main()
     cin.tie(NULL);
     cout.tie(NULL);
 
-    int a, b;
+    //int a, b;
 
-    while (true)
-    {
-        cin >> a >> b;
+    /*  while (true)
+      {
+          cin >> a >> b;
 
-        if (a == 0 && b == 0)
-        {
-            break;
+          if (a == 0 && b == 0)
+          {
+              break;
+          }
+          cout << a + b << "\n";
+      }*/
+
+    int X;
+    cin >> X;
+
+    int count = 1, min = 64, sum = 64;
+
+    while (sum > X) {
+        min = min / 2;
+        if (sum - min >= X) {
+            sum -= min;
         }
-        cout << a + b << "\n";
+        else {
+            count++;
+        }
     }
+
+    cout << count;
 
 }
