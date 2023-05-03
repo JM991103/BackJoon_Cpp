@@ -22,21 +22,36 @@ int main()
           cout << a + b << "\n";
       }*/
 
-    int X;
-    cin >> X;
+    //int X;
+    //cin >> X;
 
-    int count = 1, min = 64, sum = 64;
+    //int count = 1, min = 64, sum = 64;
 
-    while (sum > X) {
-        min = min / 2;
-        if (sum - min >= X) {
-            sum -= min;
+    //while (sum > X) {
+    //    min = min / 2;
+    //    if (sum - min >= X) {
+    //        sum -= min;
+    //    }
+    //    else {
+    //        count++;
+    //    }
+    //}
+
+    //cout << count;
+
+
+    int cnt = 0, guest, a[101] = { 0 }, num;
+
+    cin >> guest;
+
+    for (int i = 0; i < guest; i++)
+    {
+        cin >> num;
+        if (a[num] > 0)
+        {
+            cnt++;
         }
-        else {
-            count++;
-        }
+        a[num]++;
     }
-
-    cout << count;
-
+    cout << cnt << '\n';
 }
