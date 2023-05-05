@@ -39,8 +39,7 @@ int main()
 
     //cout << count;
 
-
-    int cnt = 0, guest, a[101] = { 0 }, num;
+    /*int cnt = 0, guest, a[101] = { 0 }, num;
 
     cin >> guest;
 
@@ -53,5 +52,6 @@ int main()
         }
         a[num]++;
     }
-    cout << cnt << '\n';
+    cout << cnt << '\n';*/
+
 }

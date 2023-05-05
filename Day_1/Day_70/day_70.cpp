@@ -1,0 +1,32 @@
+#include <iostream>
+#include <algorithm>
+#include <string>
+using namespace std;
+
+int main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+
+	int n, score = 0, res[100], bonus = 0;
+	cin >> n;
+
+	for (int i = 1; i <= n; i++) {
+		cin >> res[i];
+		if (res[i] == 1) // 정답이면, 1점 추가
+		{ 
+			score++;
+			if (res[i - 1] == 1) // 정답이면서, 이전 문제도 정답이면, 가산점에 1점 추가
+			{ 
+				bonus++;
+				score += bonus; // 총 점수에 가산점을 더함.
+			}
+			else 
+			{
+				bonus = 0;
+			}
+		}
+	}
+	cout << score;
+}
