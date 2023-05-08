@@ -56,7 +56,7 @@ int main()
 		cout << ans[k - 1];
 	}*/
 
-	int t;
+	/*int t;
 	cin >> t;
 
 	while (t--) 
@@ -77,6 +77,17 @@ int main()
 		{
 			cout << "NO\n";
 		}
+	}*/
+
+	int k, n, m;
+	cin >> k >> n >> m;
+	if (k * n > m)
+	{
+		cout << k * n - m << "\n";
+	}
+	else
+	{
+		cout << 0 << "\n";
 	}
 
 }
