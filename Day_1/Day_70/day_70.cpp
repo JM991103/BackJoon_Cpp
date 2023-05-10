@@ -90,7 +90,7 @@ int main()
 		cout << 0 << "\n";
 	}*/
 
-	string name;
+	/*string name;
 
 	cin >> name;
 
@@ -109,5 +109,14 @@ int main()
 	else if (name == "SJA")
 	{
 		cout << "St. Johnsbury Academy";
-	}	
+	}	*/
+
+	int n, m;
+	int a, b;
+	cin >> n >> m;
+	for (int i = 0; i < n; i++)
+	{
+		cin >> a >> b;
+	}
+	cout << "ºñ¿ÍÀÌ";
 }
