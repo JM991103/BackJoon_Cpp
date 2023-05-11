@@ -111,12 +111,28 @@ int main()
 		cout << "St. Johnsbury Academy";
 	}	*/
 
-	int n, m;
+	/*int n, m;
 	int a, b;
 	cin >> n >> m;
 	for (int i = 0; i < n; i++)
 	{
 		cin >> a >> b;
 	}
-	cout << "비와이";
+	cout << "비와이";*/
+
+	int n;
+	cin >> n;
+
+	if (n % 8 >= 1 && n % 8 <= 5) {
+		cout << n % 8;
+	}
+	else if (n % 8 == 6) {
+		cout << "4\n";
+	}
+	else if (n % 8 == 7) {
+		cout << "3\n";
+	}
+	else if (n % 8 == 0) {
+		cout << "2\n";
+	}
 }
