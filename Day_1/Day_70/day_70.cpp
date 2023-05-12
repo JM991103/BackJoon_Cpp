@@ -5,9 +5,9 @@ using namespace std;
 
 int main()
 {
-    ios::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
+	ios::sync_with_stdio(false);
+	cin.tie(NULL);
+	cout.tie(NULL);
 
 	//int n, score = 0, res[100], bonus = 0;
 	//cin >> n;
@@ -59,7 +59,7 @@ int main()
 	/*int t;
 	cin >> t;
 
-	while (t--) 
+	while (t--)
 	{
 		int n;
 
@@ -73,7 +73,7 @@ int main()
 		{
 			cout << "YES\n";
 		}
-		else 
+		else
 		{
 			cout << "NO\n";
 		}
@@ -120,7 +120,7 @@ int main()
 	}
 	cout << "비와이";*/
 
-	int n;
+	/*int n;
 	cin >> n;
 
 	if (n % 8 >= 1 && n % 8 <= 5) {
@@ -134,5 +134,31 @@ int main()
 	}
 	else if (n % 8 == 0) {
 		cout << "2\n";
+	}*/
+
+	int a, b;
+	cin >> a >> b;
+
+	int n[1000];
+	int cnt = 0;
+
+	for (int i = 1; cnt < 1000; i++) 
+	{
+		for (int j = 0; j < i; j++) 
+		{
+			n[cnt++] = i; //cnt는 for문과 상관없이 이 줄이 끝나면 1씩 증가
+			if (cnt == 1000) //n배열을 다 채우면 break;
+				
+			break;
+		}
 	}
+
+	int sum = 0;
+
+	for (int i = a - 1; i <= b - 1; i++) //a번째는 n[a-1]값이고, b번째는 n[b-1]값 이므로
+	{ 
+		sum += n[i];
+	}
+	cout << sum << endl;
+	return 0;
 }
