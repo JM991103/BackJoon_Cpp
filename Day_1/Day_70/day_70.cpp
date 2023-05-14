@@ -161,7 +161,7 @@ int main()
 	//}
 	//cout << sum << endl;
 
-	int n;
+	/*int n;
 	cin >> n;
 
 	for (int t = 0; t < n; t++)
@@ -180,5 +180,5 @@ int main()
 		}
 
 		cout << (sum % N ? "NO\n" : "YES\n");
-	}
+	}*/
 }
