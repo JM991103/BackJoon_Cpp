@@ -23,7 +23,7 @@ int main()
 		cout << "gosu";
 	}*/
 
-	int n, tmp1, tmp2;
+	/*int n, tmp1, tmp2;
 
 	while (1)
 	{
@@ -48,5 +48,21 @@ int main()
 		}
 
 		cout << n << '\n';
+	}*/
+
+	int a, b, total = 0, big = 0;
+
+	for (int i = 0; i < 10; i++)
+	{
+		cin >> a >> b;
+
+		total += -a + b;
+
+		if (total > big)
+		{
+			big = total;
+		}
 	}
+
+	cout << big;
 }
