@@ -50,7 +50,7 @@ int main()
 		cout << n << '\n';
 	}*/
 
-	int a, b, total = 0, big = 0;
+	/*int a, b, total = 0, big = 0;
 
 	for (int i = 0; i < 10; i++)
 	{
@@ -64,5 +64,25 @@ int main()
 		}
 	}
 
-	cout << big;
+	cout << big;*/
+
+	string k;
+
+	int n;
+
+	cin >> n;
+
+	cin.ignore();
+
+	while (n--)
+	{
+		getline(cin, k);
+
+		if ('a' <= k[0] && k[0] <= 'z')
+		{
+			k[0] -= 32;
+		}
+
+		cout << k << '\n';
+	}
 }
