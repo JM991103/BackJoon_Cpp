@@ -66,7 +66,7 @@ int main()
 
 	cout << big;*/
 
-	string k;
+	/*string k;
 
 	int n;
 
@@ -84,5 +84,40 @@ int main()
 		}
 
 		cout << k << '\n';
+	}*/
+
+	double a, b, c;
+	cin >> a >> b >> c;
+	if (a + b == c)
+	{
+		cout << a << '+' << b << '=' << c;
+	}
+	else if (a - b == c)
+	{
+		cout << a << '-' << b << '=' << c;
+	}
+	else if (a * b == c)
+	{
+		cout << a << '*' << b << '=' << c;
+	}
+	else if (a / b == c)
+	{
+		cout << a << '/' << b << '=' << c;
+	}
+	else if (a == b + c)
+	{
+		cout << a << '=' << b << '+' << c;
+	}
+	else if (a == b - c)
+	{
+		cout << a << '=' << b << '-' << c;
+	}
+	else if (a == b * c)
+	{
+		cout << a << '=' << b << '*' << c;
+	}
+	else if (a == b / c)
+	{
+		cout << a << '=' << b << '/' << c;
 	}
 }
