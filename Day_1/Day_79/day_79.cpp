@@ -121,7 +121,7 @@ int main()
 		cout << a << '=' << b << '/' << c;
 	}*/
 
-	int t, paymoney;
+	/*int t, paymoney;
 	cin >> t;
 
 	while (t--) {
@@ -131,27 +131,57 @@ int main()
 		cin >> paymoney;
 
 		while (paymoney) {
-			if (paymoney >= 25) 
+			if (paymoney >= 25)
 			{
 				Q++;
 				paymoney -= 25;
 			}
-			else if (paymoney >= 10) 
+			else if (paymoney >= 10)
 			{
 				D++;
 				paymoney -= 10;
 			}
-			else if (paymoney >= 5) 
+			else if (paymoney >= 5)
 			{
 				N++;
 				paymoney -= 5;
 			}
-			else 
+			else
 			{
 				P++;
 				paymoney -= 1;
 			}
 		}
 		cout << Q << " " << D << " " << N << " " << P << "\n";
+	}*/
+
+	string str1, str2;
+	cin >> str1 >> str2;
+
+	int cnt = 0;
+	int cnt1 = 0;
+
+	for (int i = 0; i < str1.length(); i++) 
+	{
+		if (str1[i] == 'a') 
+		{
+			cnt++;
+		}
+	}
+
+	for (int i = 0; i < str2.length(); i++) 
+	{
+		if (str2[i] == 'a') 
+		{
+			cnt1++;
+		}
+	}
+
+	if (cnt >= cnt1 || str1.length() == str2.length()) 
+	{    
+		cout << "go";
+	}
+	else {
+		cout << "no";
 	}
 }
