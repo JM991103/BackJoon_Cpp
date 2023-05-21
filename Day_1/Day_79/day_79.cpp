@@ -155,7 +155,7 @@ int main()
 		cout << Q << " " << D << " " << N << " " << P << "\n";
 	}*/
 
-	string str1, str2;
+	/*string str1, str2;
 	cin >> str1 >> str2;
 
 	int cnt = 0;
@@ -183,5 +183,7 @@ int main()
 	}
 	else {
 		cout << "no";
-	}
+	}*/
+
+	cout << "고려대학교" << endl;
 }
