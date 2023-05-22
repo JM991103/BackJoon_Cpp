@@ -161,29 +161,59 @@ int main()
 	int cnt = 0;
 	int cnt1 = 0;
 
-	for (int i = 0; i < str1.length(); i++) 
+	for (int i = 0; i < str1.length(); i++)
 	{
-		if (str1[i] == 'a') 
+		if (str1[i] == 'a')
 		{
 			cnt++;
 		}
 	}
 
-	for (int i = 0; i < str2.length(); i++) 
+	for (int i = 0; i < str2.length(); i++)
 	{
-		if (str2[i] == 'a') 
+		if (str2[i] == 'a')
 		{
 			cnt1++;
 		}
 	}
 
-	if (cnt >= cnt1 || str1.length() == str2.length()) 
-	{    
+	if (cnt >= cnt1 || str1.length() == str2.length())
+	{
 		cout << "go";
 	}
 	else {
 		cout << "no";
 	}*/
 
-	cout << "고려대학교" << endl;
+	/*cout << "고려대학교" << endl;*/
+
+	//int num, sum = 0;
+
+	//while (true)
+	//{
+	//	cin >> num;
+
+	//	if (num == -1)
+	//	{
+	//		break;
+	//	}
+
+	//	sum += num;
+	//}
+
+	//cout << sum;
+
+	char c;
+
+	cin >> c;
+
+	if (c == 'N' || c == 'n')
+	{
+		cout << "Naver D2";
+	}
+	else
+	{
+		cout << "Naver Whale";
+	}
+
 }
