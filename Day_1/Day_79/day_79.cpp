@@ -285,7 +285,7 @@ int main()
 			cout << "111";*/
 			//}
 
-	int x, y, a, b;
+	/*int x, y, a, b;
 	cin >> x >> y;
 
 	a = (x + y) / 2;
@@ -304,5 +304,5 @@ int main()
 		}
 		else
 			cout << -1 << '\n';
-	}
+	}*/
 }
