@@ -34,37 +34,48 @@ int main()
 
 	//return 0;
 
-	string str;
-	cin >> str;
-	float result = 0;
-	cout << fixed;		// 소수점 아래 숫자의 출력범위만 설정하겠다는 의미
-	cout.precision(1);	// 소수점 아래 (n)만큼의 자리까지만 출력하겠다는 의미
-	
-	switch (str[0])
-	{
-	case 'A' :
-		result += 4.0;
-		break;
-	case 'B':
-		result += 3.0;
-		break;
-	case 'C':
-		result += 2.0;
-		break;
-	case 'D':
-		result += 1.0;
-		break;	
-	}
+	//string str;
+	//cin >> str;
+	//float result = 0;
+	//cout << fixed;		// 소수점 아래 숫자의 출력범위만 설정하겠다는 의미
+	//cout.precision(1);	// 소수점 아래 (n)만큼의 자리까지만 출력하겠다는 의미
+	//
+	//switch (str[0])
+	//{
+	//case 'A' :
+	//	result += 4.0;
+	//	break;
+	//case 'B':
+	//	result += 3.0;
+	//	break;
+	//case 'C':
+	//	result += 2.0;
+	//	break;
+	//case 'D':
+	//	result += 1.0;
+	//	break;	
+	//}
 
-	switch (str[1])
-	{
-	case '+':
-		result += 0.3;
-		break;
-	case '-':
-		result -= 0.3;
-		break;
-	}
+	//switch (str[1])
+	//{
+	//case '+':
+	//	result += 0.3;
+	//	break;
+	//case '-':
+	//	result -= 0.3;
+	//	break;
+	//}
 
-	cout << result;
+	//cout << result;
+
+	int n, w, h, l;
+
+	cin >> n >> w >> h >> l;
+
+	int ans = (w / l) * (h / l);
+
+	n < ans ? cout << n : cout << ans;
+
+	return 0;
+
 }
