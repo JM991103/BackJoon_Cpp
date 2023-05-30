@@ -68,7 +68,7 @@ int main()
 
 	//cout << result;
 
-	int n, w, h, l;
+	/*int n, w, h, l;
 
 	cin >> n >> w >> h >> l;
 
@@ -76,6 +76,22 @@ int main()
 
 	n < ans ? cout << n : cout << ans;
 
-	return 0;
+	return 0;*/
 
+	string k;
+	cin >> k;
+
+	for (int i = 0; i < k.size(); i++)
+	{
+		if (k[i] >= 97 && k[i] <= 122)
+		{
+			k[i] -= 32;
+		}
+		else if (k[i] >= 65 && k[i] <= 90)
+		{
+			k[i] += 32;
+		}
+		cout << k[i];
+	}
+	cout << '\n';
 }
