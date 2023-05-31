@@ -78,7 +78,7 @@ int main()
 
 	return 0;*/
 
-	string k;
+	/*string k;
 	cin >> k;
 
 	for (int i = 0; i < k.size(); i++)
@@ -93,5 +93,24 @@ int main()
 		}
 		cout << k[i];
 	}
-	cout << '\n';
+	cout << '\n';*/
+
+
+	int a;
+
+	bool check[31] = { 0 };
+
+	for (int i = 1; i <= 28; i++)
+	{
+		cin >> a;
+		check[a] = 1;
+	}
+
+	for (int i = 1; i <= 30; i++)
+	{
+		if (check[i] == 0)
+		{
+			cout << i << "\n";
+		}
+	}
 }
