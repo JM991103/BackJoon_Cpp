@@ -95,8 +95,7 @@ int main()
 	}
 	cout << '\n';*/
 
-
-	int a;
+	/*int a;
 
 	bool check[31] = { 0 };
 
@@ -112,5 +111,10 @@ int main()
 		{
 			cout << i << "\n";
 		}
-	}
+	}*/
+
+	char c;
+	cin >> c;
+	cout << (int)c;
+	return 0;
 }
