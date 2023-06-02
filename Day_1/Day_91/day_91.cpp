@@ -113,8 +113,24 @@ int main()
 		}
 	}*/
 
-	char c;
+	/*char c;
 	cin >> c;
 	cout << (int)c;
-	return 0;
+	return 0;*/
+
+	int n, m;
+	cin >> n >> m;
+
+	if (m <= 2)
+	{
+		cout << "NEWBIE!";
+	}
+	else if (n < m)
+	{
+		cout << "TLE!";
+	}
+	else
+	{
+		cout << "OLDBIE!";
+	}	
 }
