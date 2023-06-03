@@ -118,7 +118,7 @@ int main()
 	cout << (int)c;
 	return 0;*/
 
-	int n, m;
+	/*int n, m;
 	cin >> n >> m;
 
 	if (m <= 2)
@@ -132,5 +132,9 @@ int main()
 	else
 	{
 		cout << "OLDBIE!";
-	}	
+	}	*/
+
+	int n, m;
+	cin >> n >> m;
+	cout << min(n / 2, m / 2);
 }
