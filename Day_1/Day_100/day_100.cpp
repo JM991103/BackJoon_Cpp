@@ -27,7 +27,7 @@ int main()
 
 	}*/
 
-	int count;
+	/*int count;
 	cin >> count;
 
 	for (int i = 1; i <= count; i++) 
@@ -42,5 +42,21 @@ int main()
 		}
 
 		cout << "\n";
+	}*/
+
+	int num, maxvalueIndex;
+	int maxvalue = -1;
+
+	for (int i = 0; i < 9; i++)
+	{
+		cin >> num;
+
+		if (num > maxvalue)
+		{
+			maxvalue = num;
+			maxvalueIndex = i + 1;
+		}
 	}
+
+	cout << maxvalue << "\n" << maxvalueIndex;
 }
