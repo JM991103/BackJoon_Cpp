@@ -60,7 +60,7 @@ int main()
 
 	cout << maxvalue << "\n" << maxvalueIndex;*/
 
-	int arr[9][9];
+	/*int arr[9][9];
 	int max = 0, row = 0, col = 0;
 
 	for (int i = 0; i < 9; i++)
@@ -77,5 +77,14 @@ int main()
 		}
 	}
 
-	cout << max << "\n" << row + 1 << " " << col + 1 << "\n";
+	cout << max << "\n" << row + 1 << " " << col + 1 << "\n";*/
+
+	int n;
+	cin >> n;
+
+	int row = n / 2 + 1;
+	int col = n - row + 2;
+	int result = row * col;
+
+	cout << result << "\n";
 }
