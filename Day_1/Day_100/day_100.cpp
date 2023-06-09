@@ -79,12 +79,26 @@ int main()
 
 	cout << max << "\n" << row + 1 << " " << col + 1 << "\n";*/
 
-	int n;
+	/*int n;
 	cin >> n;
 
 	int row = n / 2 + 1;
 	int col = n - row + 2;
 	int result = row * col;
 
-	cout << result << "\n";
+	cout << result << "\n";*/
+
+	int n;
+	int x = 2;
+
+	cin >> n;
+
+	while (n--)
+	{
+		x += (x - 1); // 변의 길이를 구함
+	}
+
+	x *= x;	// 전체 점의 개수를 구함
+
+	cout << x << "\n";
 }
