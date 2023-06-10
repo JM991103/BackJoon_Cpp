@@ -88,17 +88,25 @@ int main()
 
 	cout << result << "\n";*/
 
-	int n;
-	int x = 2;
+	//int n;
+	//int x = 2;
 
-	cin >> n;
+	//cin >> n;
 
-	while (n--)
-	{
-		x += (x - 1); // 변의 길이를 구함
-	}
+	//while (n--)
+	//{
+	//	x += (x - 1); // 변의 길이를 구함
+	//}
 
-	x *= x;	// 전체 점의 개수를 구함
+	//x *= x;	// 전체 점의 개수를 구함
 
-	cout << x << "\n";
+	//cout << x << "\n";
+
+	int n, m;
+
+	cin >> n >> m;
+
+	cout << n * (m - 1) + 1 << endl;
+
+	return 0;
 }
