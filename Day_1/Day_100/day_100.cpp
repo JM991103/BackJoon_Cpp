@@ -102,11 +102,35 @@ int main()
 
 	//cout << x << "\n";
 
-	int n, m;
+	/*int n, m;
 
 	cin >> n >> m;
 
 	cout << n * (m - 1) + 1 << endl;
 
-	return 0;
+	return 0;*/
+
+	int a, b, n;
+	int anum = 0, bnum = 0;
+	cin >> n;
+
+	for (int i = 0; i < n; i++)
+	{
+		cin >> a >> b;
+
+		if (a > b)
+		{
+			anum++;
+		}
+		else if(b > a)
+		{
+			bnum++;
+		}
+		else
+		{
+			continue;
+		}
+	}
+
+	cout << anum << " " << bnum << "\n";
 }
