@@ -110,7 +110,7 @@ int main()
 
 	return 0;*/
 
-	int a, b, n;
+	/*int a, b, n;
 	int anum = 0, bnum = 0;
 	cin >> n;
 
@@ -132,5 +132,16 @@ int main()
 		}
 	}
 
-	cout << anum << " " << bnum << "\n";
+	cout << anum << " " << bnum << "\n";*/
+
+	int price, num;
+	cin >> price;
+
+	for (int i = 0; i < 9; i++)
+	{
+		cin >> num;
+		price -= num;
+	}
+
+	cout << price << "\n";
 }
