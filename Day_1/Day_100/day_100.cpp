@@ -9,9 +9,9 @@ int main()
 
 	cin >> n >> f;
 
-	n -= n % 100;	
+	n -= n % 100;
 
-	for (int i = n; ; i++) 
+	for (int i = n; ; i++)
 	{
 		if (i % f == 0)
 		{
@@ -30,13 +30,13 @@ int main()
 	/*int count;
 	cin >> count;
 
-	for (int i = 1; i <= count; i++) 
+	for (int i = 1; i <= count; i++)
 	{
-		for (int j = 1; j <= count - i; j++) 
+		for (int j = 1; j <= count - i; j++)
 		{
 			cout << " ";
 		}
-		for (int j = 1; j <= 2 * i - 1; j++) 
+		for (int j = 1; j <= 2 * i - 1; j++)
 		{
 			cout << "*";
 		}
@@ -134,7 +134,7 @@ int main()
 
 	cout << anum << " " << bnum << "\n";*/
 
-	int price, num;
+	/*int price, num;
 	cin >> price;
 
 	for (int i = 0; i < 9; i++)
@@ -143,5 +143,23 @@ int main()
 		price -= num;
 	}
 
-	cout << price << "\n";
+	cout << price << "\n";*/
+
+	int n;
+	cin >> n;
+
+	for (int i = 0; i < n; i++)
+	{
+		string k;
+		cin >> k;
+
+		if (k[k.length() - 1] % 2 == 0)
+		{
+			cout << "even" << "\n";
+		}
+		else
+		{
+			cout << "odd" << "\n";
+		}
+	}
 }
