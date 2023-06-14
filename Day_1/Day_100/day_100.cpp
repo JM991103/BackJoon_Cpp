@@ -145,7 +145,7 @@ int main()
 
 	cout << price << "\n";*/
 
-	int n;
+	/*int n;
 	cin >> n;
 
 	for (int i = 0; i < n; i++)
@@ -160,6 +160,38 @@ int main()
 		else
 		{
 			cout << "odd" << "\n";
+		}
+	}*/
+
+	long num, ans = 0;
+	char op;
+	cin >> num;
+	ans = num;
+
+	while (1)
+	{
+		cin >> op;
+		if (op == '=')
+		{
+			cout << ans << "\n";
+			break;
+		}
+		cin >> num;
+		if (op == '+')
+		{
+			ans += num;
+		}
+		else if (op == '-')
+		{
+			ans -= num;
+		}
+		else if (op == '*')
+		{
+			ans *= num;
+		}
+		else if (op == '/')
+		{
+			ans /= num;
 		}
 	}
 }
