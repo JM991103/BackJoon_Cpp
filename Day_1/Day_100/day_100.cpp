@@ -163,7 +163,7 @@ int main()
 		}
 	}*/
 
-	long num, ans = 0;
+	/*long num, ans = 0;
 	char op;
 	cin >> num;
 	ans = num;
@@ -193,5 +193,30 @@ int main()
 		{
 			ans /= num;
 		}
+	}*/
+
+	int t;
+	cin >> t;
+
+	while (t--)
+	{
+		int box; 
+		cin >> box;
+		for (int i = 0; i < box; i++)
+		{
+			for (int j = 0; j < box; j++)
+			{
+				if (i != 0 && i != box -1 && j != 0 && j != box-1)
+				{
+					cout << "J";
+				}
+				else
+				{
+					cout << "#";
+				}				
+			}
+			cout << "\n";
+		}
+		cout << "\n";
 	}
 }
