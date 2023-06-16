@@ -1,5 +1,6 @@
 #include <iostream>
 #include <algorithm>
+#include <vector>
 #include <string>
 using namespace std;
 
@@ -195,12 +196,12 @@ int main()
 		}
 	}*/
 
-	int t;
+	/*int t;
 	cin >> t;
 
 	while (t--)
 	{
-		int box; 
+		int box;
 		cin >> box;
 		for (int i = 0; i < box; i++)
 		{
@@ -213,10 +214,25 @@ int main()
 				else
 				{
 					cout << "#";
-				}				
+				}
 			}
 			cout << "\n";
 		}
 		cout << "\n";
+	}*/
+
+	int max = 4;
+	
+	vector<int> footsteps(max);
+
+	for (int i = 0; i < max; i++)
+	{
+		cin >> footsteps[i];
 	}
+
+	sort(footsteps.begin(), footsteps.end());
+
+	int result = footsteps[0] * footsteps[2];
+
+	cout << result << "\n";
 }
