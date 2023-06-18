@@ -222,7 +222,7 @@ int main()
 	}*/
 
 	/*int max = 4;
-	
+
 	vector<int> footsteps(max);
 
 	for (int i = 0; i < max; i++)
@@ -236,7 +236,7 @@ int main()
 
 	cout << result << "\n";*/
 
-	int n, m;
+	/*int n, m;
 	int a[50], b[50];
 	int temp1 = 0, temp2 = 0;
 	cin >> n >> m;
@@ -246,12 +246,29 @@ int main()
 		cin >> a[i];
 		temp1 += a[i];
 	}
-	
+
 	for (int i = 0; i < m; i++)
 	{
 		cin >> b[i];
 		temp2 += b[i];
 	}
 
-	cout << temp1 - temp2;
+	cout << temp1 - temp2;*/
+
+	int n, a = 0, b;
+
+	cin >> n;
+	n -= 1;
+
+	while (true) 
+	{
+		a++;
+		if (a * a + a == n)
+		{
+			break;
+		}
+	}
+
+	cout << a;
+
 }
