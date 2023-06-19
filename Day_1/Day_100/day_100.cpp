@@ -255,12 +255,12 @@ int main()
 
 	cout << temp1 - temp2;*/
 
-	int n, a = 0, b;
+	/*int n, a = 0, b;
 
 	cin >> n;
 	n -= 1;
 
-	while (true) 
+	while (true)
 	{
 		a++;
 		if (a * a + a == n)
@@ -269,6 +269,20 @@ int main()
 		}
 	}
 
-	cout << a;
+	cout << a;*/
+
+
+	int n;
+	cin >> n;
+	
+	int i = 1;
+	int cnt = 1;
+
+	while (n > i)
+	{
+		i += (6 * cnt);
+		cnt++;
+	}
+	cout << cnt;
 
 }
