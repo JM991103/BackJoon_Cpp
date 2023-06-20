@@ -272,7 +272,7 @@ int main()
 	cout << a;*/
 
 
-	int n;
+	/*int n;
 	cin >> n;
 	
 	int i = 1;
@@ -283,6 +283,28 @@ int main()
 		i += (6 * cnt);
 		cnt++;
 	}
-	cout << cnt;
+	cout << cnt;*/
 
+	string n;
+
+	// 0이 아니면 무한 반복
+	while(n != "0")
+	{
+		cin >> n; // 숫자를 string타입으로 입력 받음
+		string buf = n;
+		reverse(n.begin(), n.end());	// 앞 뒤 바꿈
+
+		if (n == "0")
+		{
+			break;
+		}
+		else if (n == buf)
+		{
+			cout << "yes" << "\n";
+		}
+		else
+		{
+			cout << "no" << "\n";
+		}
+	}
 }
