@@ -285,26 +285,28 @@ int main()
 	}
 	cout << cnt;*/
 
-	string n;
+	//string n;
 
-	// 0이 아니면 무한 반복
-	while(n != "0")
-	{
-		cin >> n; // 숫자를 string타입으로 입력 받음
-		string buf = n;
-		reverse(n.begin(), n.end());	// 앞 뒤 바꿈
+	//// 0이 아니면 무한 반복
+	//while(n != "0")
+	//{
+	//	cin >> n; // 숫자를 string타입으로 입력 받음
+	//	string buf = n;
+	//	reverse(n.begin(), n.end());	// 앞 뒤 바꿈
 
-		if (n == "0")
-		{
-			break;
-		}
-		else if (n == buf)
-		{
-			cout << "yes" << "\n";
-		}
-		else
-		{
-			cout << "no" << "\n";
-		}
-	}
+	//	if (n == "0")
+	//	{
+	//		break;
+	//	}
+	//	else if (n == buf)
+	//	{
+	//		cout << "yes" << "\n";
+	//	}
+	//	else
+	//	{
+	//		cout << "no" << "\n";
+	//	}
+	//}
+
+
 }
