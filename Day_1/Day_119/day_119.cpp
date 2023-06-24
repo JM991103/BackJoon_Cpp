@@ -10,7 +10,19 @@ int main()
 	cin.tie(NULL);
 	cout.tie(NULL);
 
-	long long n, m;
+	/*long long n, m;
 	cin >> n >> m;
-	cout << (n + m) * (n - m) << "\n";
+	cout << (n + m) * (n - m) << "\n";*/
+
+	int n;
+	double a;
+	cin >> n;
+
+	for (int i = 0; i < n; i++)
+	{
+		cin >> a;
+		cout << fixed;
+		cout.precision(2);
+		cout << "$" << a * 0.8f << "\n";
+	}
 }
