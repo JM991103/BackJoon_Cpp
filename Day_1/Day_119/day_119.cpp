@@ -14,7 +14,7 @@ int main()
 	cin >> n >> m;
 	cout << (n + m) * (n - m) << "\n";*/
 
-	int n;
+	/*int n;
 	double a;
 	cin >> n;
 
@@ -24,5 +24,13 @@ int main()
 		cout << fixed;
 		cout.precision(2);
 		cout << "$" << a * 0.8f << "\n";
-	}
+	}*/
+
+	int scoreA, scoreB;
+
+	cin >> scoreA >> scoreB;
+
+	int scoreC = scoreA ^ scoreB;
+
+	cout << scoreC << "\n";
 }
