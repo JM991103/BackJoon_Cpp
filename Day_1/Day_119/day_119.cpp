@@ -34,7 +34,7 @@ int main()
 
 	cout << scoreC << "\n";*/
 
-	int n;
+	/*int n;
 
 	cin >> n;
 
@@ -45,5 +45,12 @@ int main()
 			cout << "*";
 		}
 		cout << "\n";
-	}
+	}*/
+
+	int n, m;
+
+	cin >> n >> m;
+
+	cout << min(n / 2, m) << "\n";
+
 }
