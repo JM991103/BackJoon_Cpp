@@ -26,11 +26,24 @@ int main()
 		cout << "$" << a * 0.8f << "\n";
 	}*/
 
-	int scoreA, scoreB;
+	/*int scoreA, scoreB;
 
 	cin >> scoreA >> scoreB;
 
 	int scoreC = scoreA ^ scoreB;
 
-	cout << scoreC << "\n";
+	cout << scoreC << "\n";*/
+
+	int n;
+
+	cin >> n;
+
+	for (int i = 1; i <= n; i++)
+	{
+		for (int j = 1; j <= i; j++)
+		{
+			cout << "*";
+		}
+		cout << "\n";
+	}
 }
