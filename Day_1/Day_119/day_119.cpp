@@ -47,10 +47,10 @@ int main()
 		cout << "\n";
 	}*/
 
-	int n, m;
+	/*int n, m;
 
 	cin >> n >> m;
 
-	cout << min(n / 2, m) << "\n";
+	cout << min(n / 2, m) << "\n";*/
 
 }
