@@ -10,13 +10,13 @@ int main()
 	cin.tie(NULL);
 	cout.tie(NULL);
 
-	int ques, s, t, class_time;
+	/*int ques, s, t, class_time;
 
 	cin >> ques;
 
 	while (ques--)
 	{
-		s = 0; 
+		s = 0;
 		t = 0;
 
 		int ans = 0;
@@ -34,5 +34,18 @@ int main()
 			s = t * t;
 		}
 		cout << t << "\n";
+	}*/
+
+	int a, b, c, d;
+
+	cin >> a >> b >> c >> d;
+
+	if (a + d <= b + c)
+	{
+		cout << a + d;
+	}
+	else
+	{
+		cout << b + c;
 	}
 }
