@@ -36,7 +36,7 @@ int main()
 		cout << t << "\n";
 	}*/
 
-	int a, b, c, d;
+	/*int a, b, c, d;
 
 	cin >> a >> b >> c >> d;
 
@@ -47,5 +47,14 @@ int main()
 	else
 	{
 		cout << b + c;
+	}*/
+
+	int T;
+	cin >> T;
+	for (int i = 0; i < T; i++)
+	{
+		int V, E;
+		cin >> V >> E;
+		cout << (2 - V + E) << '\n';
 	}
 }
