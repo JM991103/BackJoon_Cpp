@@ -58,11 +58,16 @@ int main()
 		cout << (2 - V + E) << '\n';
 	}*/
 
-	int x, y, w, h;
+	/*int x, y, w, h;
 	int temp1, temp2;
 
 	cin >> x >> y >> w >> h;
 	temp1 = min(x, y);
 	temp2 = min(w - x, h - y);
-	cout << min(temp1, temp2);
+	cout << min(temp1, temp2);*/
+
+	cout << ".  .   ." << endl;
+	cout << "|  | _ | _. _ ._ _  _" << endl;
+	cout << "|/\\|(/.|(_.(_)[ | )(/." << endl;
+
 }
