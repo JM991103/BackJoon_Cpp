@@ -66,8 +66,13 @@ int main()
 	temp2 = min(w - x, h - y);
 	cout << min(temp1, temp2);*/
 
-	cout << ".  .   ." << endl;
+	/*cout << ".  .   ." << endl;
 	cout << "|  | _ | _. _ ._ _  _" << endl;
-	cout << "|/\\|(/.|(_.(_)[ | )(/." << endl;
+	cout << "|/\\|(/.|(_.(_)[ | )(/." << endl;*/
 
+
+	string s;
+	cin >> s;
+
+	cout << s.length() << "\n";
 }
