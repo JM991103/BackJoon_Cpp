@@ -20,7 +20,7 @@ int main()
 
 	cout << max(k[2] - k[1], k[1] - k[0]) - 1 << "\n";*/
 
-	int n;
+	/*int n;
 	int arr[51];
 
 	cin >> n;
@@ -32,5 +32,10 @@ int main()
 	sort(arr, arr + n);
 	int ans = arr[0] * arr[n - 1];
 
-	cout << ans;
+	cout << ans;*/
+
+	int n;
+	cin >> n;
+
+	cout << "1" << "\n" << "0";
 }
