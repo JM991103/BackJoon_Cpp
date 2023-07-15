@@ -133,7 +133,7 @@ int main()
 
 	cout << cnt;*/
 
-	int month, date;
+	/*int month, date;
 	cin >> month >> date;
 
 	int days[12] = { 31,28,31,30,31,30,31,31,30,31,30,31 };
@@ -168,5 +168,24 @@ int main()
 	case 6:
 		cout << "SAT";
 		break;
+	}*/
+
+	int n;
+	cin >> n;
+	int i = 0;
+	
+	while (n > i)
+	{
+		n -= i;
+		i++;
+	}
+
+	if (i % 2 == 1)
+	{
+		cout << i + 1 - n << "/" << n << endl;
+	}
+	else
+	{
+		cout << n << "/" << i + 1 - n << endl;
 	}
 }
