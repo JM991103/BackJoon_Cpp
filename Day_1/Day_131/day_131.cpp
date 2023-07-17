@@ -189,7 +189,7 @@ int main()
 		cout << n << "/" << i + 1 - n << endl;
 	}*/
 
-	string board, result;
+	/*string board, result;
 	int cnt = 0;
 
 	cin >> board;
@@ -213,7 +213,7 @@ int main()
 			else
 			{
 				cnt = 0;
-			}			
+			}
 		}
 
 		if (cnt == 2 && board[i + 1] != 'X')
@@ -234,5 +234,34 @@ int main()
 	else
 	{
 		cout << result;
+	}*/
+
+	int n, m;
+
+	cin >> n >> m;
+
+	if (n == 2)
+	{
+		if (m == 18)
+		{
+			cout << "Special";
+		}
+		else if (m > 18)
+		{
+			cout << "After";
+		}
+		else
+		{
+			cout << "Before";
+		}
+	}
+	else if (n > 2)
+	{
+		cout << "After";
+		
+	}
+	else
+	{
+		cout << "Before";
 	}
 }
