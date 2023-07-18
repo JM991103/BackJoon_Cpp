@@ -236,7 +236,7 @@ int main()
 		cout << result;
 	}*/
 
-	int n, m;
+	/*int n, m;
 
 	cin >> n >> m;
 
@@ -263,5 +263,12 @@ int main()
 	else
 	{
 		cout << "Before";
-	}
+	}*/
+
+	int n;
+	string s;
+
+	cin >> s >> n;
+
+	cout << s[n - 1];
 }
