@@ -10,7 +10,7 @@ int main()
 	cin.tie(NULL);
 	cout.tie(NULL);
 
-	int answer = 0;
+	/*int answer = 0;
 	char pan[8][9];
 
 	for (int i = 0; i < 8; i++)
@@ -29,5 +29,9 @@ int main()
 		}
 	}
 
-	cout << answer;
+	cout << answer;*/
+
+	long x, y;
+	cin >> x >> y;
+	cout << x * y / 2;
 }
