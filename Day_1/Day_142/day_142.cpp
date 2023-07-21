@@ -31,7 +31,16 @@ int main()
 
 	cout << answer;*/
 
-	long x, y;
+	/*long x, y;
 	cin >> x >> y;
-	cout << x * y / 2;
+	cout << x * y / 2;*/
+
+	int n, a, b, c;
+	cin >> n;
+
+	while (n--)
+	{
+		cin >> a >> b >> c;
+		cout << min(a, min(b, c)) << "\n";
+	}
 }
