@@ -35,12 +35,31 @@ int main()
 	cin >> x >> y;
 	cout << x * y / 2;*/
 
-	int n, a, b, c;
+	/*int n, a, b, c;
 	cin >> n;
 
 	while (n--)
 	{
 		cin >> a >> b >> c;
 		cout << min(a, min(b, c)) << "\n";
+	}*/
+
+	int test, test1;
+	cin >> test >> test1;
+
+	string str;
+
+	vector<string> vec;
+
+	for (int i = 0; i < test; i++)
+	{
+		cin >> str;
+		vec.push_back(str);
+	}
+
+	for (int i = 0; i < test; i++)
+	{
+		reverse(vec[i].begin(), vec[i].end());	// 문자열을 reverse함수로 뒤집는다.
+		cout << vec[i] << "\n";
 	}
 }
