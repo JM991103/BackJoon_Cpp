@@ -4,6 +4,14 @@
 #include <string>
 using namespace std;
 
+int divide(int x, int y)
+{
+	if (x % y == 0)
+		return y;
+	else
+		return divide(y, x % y);
+}
+
 int main()
 {
 	ios::sync_with_stdio(false);
@@ -44,22 +52,40 @@ int main()
 		cout << min(a, min(b, c)) << "\n";
 	}*/
 
-	int test, test1;
-	cin >> test >> test1;
+	//int test, test1;
+	//cin >> test >> test1;
 
-	string str;
+	//string str;
 
-	vector<string> vec;
+	//vector<string> vec;
 
-	for (int i = 0; i < test; i++)
+	//for (int i = 0; i < test; i++)
+	//{
+	//	cin >> str;
+	//	vec.push_back(str);
+	//}
+
+	//for (int i = 0; i < test; i++)
+	//{
+	//	reverse(vec[i].begin(), vec[i].end());	// 문자열을 reverse함수로 뒤집는다.
+	//	cout << vec[i] << "\n";
+	//}
+
+	int t;
+	int a, b;
+	cin >> t;
+
+	for (int i = 0; i < t; i++)
 	{
-		cin >> str;
-		vec.push_back(str);
-	}
+		cin >> a >> b;
 
-	for (int i = 0; i < test; i++)
-	{
-		reverse(vec[i].begin(), vec[i].end());	// 문자열을 reverse함수로 뒤집는다.
-		cout << vec[i] << "\n";
+		if (a >= b)
+		{
+			cout << a * b / divide(a, b) << "\n";
+		}
+		else
+		{
+			cout << a * b / divide(b, a) << "\n";
+		}
 	}
 }
