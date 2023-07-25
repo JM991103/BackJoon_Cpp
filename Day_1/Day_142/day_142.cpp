@@ -89,7 +89,7 @@ int main()
 		}
 	}*/
 
-	int n, m;
+	/*int n, m;
 	long long pSum[301][301];
 	cin >> n >> m;
 
@@ -110,5 +110,11 @@ int main()
 		int a, b, c, d;
 		cin >> a >> b >> c >> d;
 		cout << pSum[c][d] - pSum[a - 1][d] - pSum[c][b - 1] + pSum[a - 1][b - 1] << "\n";
+	}*/
+
+	int n, s;
+	while (cin >> n >> s)
+	{
+		cout << s / (n + 1) << "\n";
 	}
 }
