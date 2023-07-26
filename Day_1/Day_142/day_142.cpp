@@ -112,9 +112,22 @@ int main()
 		cout << pSum[c][d] - pSum[a - 1][d] - pSum[c][b - 1] + pSum[a - 1][b - 1] << "\n";
 	}*/
 
-	int n, s;
+	/*int n, s;
 	while (cin >> n >> s)
 	{
 		cout << s / (n + 1) << "\n";
-	}
+	}*/
+
+	int n, m;
+	int a, b, c, d, q, r;
+	cin >> n >> m;
+	a = 100 - n;
+	b = 100 - m;
+	c = 100 - (a + b);
+	d = a * b;
+	q = d / 100;
+	r = d % 100;
+
+	cout << a << ' ' << b << ' ' << c << ' ' << d << ' ' << q << ' ' << r << ' ' << "\n";
+	cout << c + q << ' ' << r << "\n";
 }
