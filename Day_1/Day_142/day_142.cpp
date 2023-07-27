@@ -118,7 +118,7 @@ int main()
 		cout << s / (n + 1) << "\n";
 	}*/
 
-	int n, m;
+	/*int n, m;
 	int a, b, c, d, q, r;
 	cin >> n >> m;
 	a = 100 - n;
@@ -129,5 +129,25 @@ int main()
 	r = d % 100;
 
 	cout << a << ' ' << b << ' ' << c << ' ' << d << ' ' << q << ' ' << r << ' ' << "\n";
-	cout << c + q << ' ' << r << "\n";
+	cout << c + q << ' ' << r << "\n";*/
+
+	string n;
+	cin >> n;
+
+	if (n == "SONGDO")
+	{
+		cout << "HIGHSCHOOL";
+	}
+	else if (n == "CODE")
+	{
+		cout << "MASTER";
+	}
+	else if (n == "2023")
+	{
+		cout << "0611";
+	}
+	else if (n == "ALGORITHM")
+	{
+		cout << "CONTEST";
+	}
 }
