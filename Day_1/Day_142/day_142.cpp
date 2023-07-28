@@ -131,7 +131,7 @@ int main()
 	cout << a << ' ' << b << ' ' << c << ' ' << d << ' ' << q << ' ' << r << ' ' << "\n";
 	cout << c + q << ' ' << r << "\n";*/
 
-	string n;
+	/*string n;
 	cin >> n;
 
 	if (n == "SONGDO")
@@ -149,5 +149,10 @@ int main()
 	else if (n == "ALGORITHM")
 	{
 		cout << "CONTEST";
-	}
+	}*/
+
+	int A, B;
+	cin >> A >> B;
+	cout << B - A << " " << B;
+	return 0;
 }
