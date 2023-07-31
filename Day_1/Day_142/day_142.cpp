@@ -2,6 +2,7 @@
 #include <algorithm>
 #include <vector>
 #include <string>
+#include <queue>
 using namespace std;
 
 int divide(int x, int y)
@@ -151,8 +152,28 @@ int main()
 		cout << "CONTEST";
 	}*/
 
-	int A, B;
+	/*int A, B;
 	cin >> A >> B;
 	cout << B - A << " " << B;
-	return 0;
+	return 0;*/
+
+	queue<int> q;
+	int n;
+
+	cin >> n;
+
+	for (int i = 1; i <= n; i++)
+	{
+		q.push(i);
+	}
+
+	while (q.size() != 1)
+	{
+		cout << q.front() << " ";
+		q.pop();
+		q.push(q.front());
+		q.pop();
+	}
+
+	cout << q.front();
 }
